@@ -140,6 +140,15 @@ nav .hamburger {
 .spotify {
   margin-top: 24px;
 }
+
+.section {
+  padding: 20px 20px;
+  background-color: rgba(239, 202, 226, 0.598);
+  text-align: center;
+  font-family: "Idealist Sans", sans-serif;
+  font-weight: 300;
+  padding-bottom: 55px;
+}
 .spotify-head {
   display: flex;
   align-items: baseline;
@@ -201,4 +210,13 @@ nav .hamburger {
   background-color: blue;
   color: white;
   padding: 10px;
+}
+
+h2 {
+  font-family: "Idealist Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
