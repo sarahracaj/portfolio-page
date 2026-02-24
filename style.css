@@ -137,6 +137,66 @@ nav .hamburger {
   }
 }
 
+.spotify {
+  margin-top: 24px;
+}
+.spotify-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.track-list {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.track img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.track .title {
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.track .artist {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.track a {
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.4);
+}
+.track a:hover {
+  opacity: 0.8;
+}
+
 #btn {
   background-color: blue;
   color: white;
