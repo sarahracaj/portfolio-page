@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <script defer src="strava.js"></script>
   </head>
   <body>
     <header>
@@ -32,17 +33,17 @@
     </nav>
 
     <section class="Hobby" id="reiten">
-      <div class="section">
+      <div class="hobby-section">
         <h2>Reiten</h2>
         <div class="hobby-intro">
           <p>
-            Ich reite seit der 4. Klasse und habe seit meinem 16. Lebensjahr
-            durchgehend Reitbeteiligungen gehabt. Ich durfte in dieser Zeit ganz
-            unterschiedliche Pferde begleiten. Jung und alt, sensibel oder
-            gemütlich, klein und gross. Ein Reit-Brevet habe ich nie absolviert.
-            Ich habe Reiten mit learning by doing gelernt, was nicht immer
-            einfach war. Vor kurzem habe ich in einen Aktivstall in Jegenstorf
-            gewechselt und habe da eine neue Reitbeteiligung gefunden.
+            Seit meinem 16. Lebensjahr durchgehend Reitbeteiligungen gehabt. Ich
+            durfte in dieser Zeit ganz unterschiedliche Pferde begleiten. Jung
+            und alt, sensibel oder gemütlich, klein und gross. Ein Reit-Brevet
+            habe ich nie absolviert. Ich habe Reiten mit learning by doing
+            gelernt, was nicht immer einfach war. Vor kurzem habe ich in einen
+            Aktivstall in Jegenstorf gewechselt und habe da eine neue
+            Reitbeteiligung gefunden.
           </p>
           <p>
             Reiten bedeutet für mich nicht Sport und Leistungsdruck sondern
@@ -54,7 +55,7 @@
           <div class="horse-text">
             <h3>Jenny</h3>
             <p>
-              Jenny ist miene aktuelle Reitbeteiligung. Sie ist eine 17 Jährige
+              Jenny ist meine aktuelle Reitbeteiligung. Sie ist eine 17 Jährige
               Freibergerstute welche aufmerksam, sensibel und unglaublich
               lernbereit ist. Sie kann aber auch gerne mal einfach keinen "bock"
               haben und zeigt mir das sehr gut.
@@ -71,12 +72,23 @@
             <p>
               Unico aka Ueli wie wir ihn liebevoll nennen ist Jennys Herzensbub.
               Die zwei sind unzertrennlich. Gemeinsam mit der Besitzerin von
-              Ueli und Jenny geniessen wir lange Ausritte und Trainings.
+              Ueli und Jenny geniessen wir lange Ausritte.
             </p>
           </div>
           <div class="horse-gallery">
             <img src="images/ueli.jpg" alt="Ueli und Jenny auf dem Putzplatz" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strava-block" id="strava">
+      <div class="hobby-section">
+        <h2>Meine Reitrouten (Strava)</h2>
+        <p class="muted" id="strava-updated"></p>
+
+        <div class="strava-grid" id="strava-grid">
+          <div class="muted">Lade Strava-Daten…</div>
         </div>
       </div>
     </section>
