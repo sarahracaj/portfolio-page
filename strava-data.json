@@ -6,6 +6,69 @@
       "resource_state": 1
     },
     "name": "Ausritt alleine",
+    "distance": 9812.9,
+    "moving_time": 6629,
+    "elapsed_time": 6749,
+    "total_elevation_gain": 205.4,
+    "type": "Ride",
+    "sport_type": "Ride",
+    "workout_type": null,
+    "device_name": "Strava App",
+    "id": 17661617842,
+    "start_date": "2026-03-09T14:55:00Z",
+    "start_date_local": "2026-03-09T15:55:00Z",
+    "timezone": "(GMT+01:00) Europe/Zurich",
+    "utc_offset": 3600.0,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a17661617842",
+      "summary_polyline": "qrf~G_txl@UvABx@KLi@NQPi@FuB~@q@Le@RGAg@Ty@DmBLaC^oA?a@KuB?kBXw@HcA?i@R}ADwAXQFc@d@y@^wBj@Bn@Ab@E`@Kb@En@m@jBCf@XrDn@bGB\\If@c@n@]|@K\\MFCNQR]Po@Fk@@g@EW\\Wj@EXiAnCQr@@NGlAKx@BZW|B?t@Kd@@TMn@OTeADa@XmA@]b@SFq@r@OTIZe@r@OF]h@i@XGT]HORs@HUKi@EUOu@GII}@{DOa@Y}BQc@KE{ABeAS}@]wB]QQQc@g@iBoBfBy@bAa@XYj@]VI?KOQ}@Cs@OkA?]Km@i@wFE}@SaBC_A}@kI?a@Ii@IaAOqC[{@_@q@o@yBQ_BS}@IuAWkA[q@c@m@o@mAYo@Km@?}BCeAEMKBS\\UJy@Oi@Pe@Vu@Bq@LW\\y@d@Y`@UJq@z@_B~ASNMAYQa@o@E?Yz@c@n@URQDqApAYLWv@C\\Mb@G`AGPa@f@Cd@l@cBFq@TcAXaAVKRUNGj@m@TMn@k@N[Ny@AeABaA^sBVm@TO|@GZOBGb@YRi@d@k@DOTGZJ\\d@b@\\bB|@p@z@~@ZDJCt@k@nGMd@QnAAj@Tn@ZZXf@Nr@Fx@Pt@`@|@^VLRJT?NHDFZD@?XRTAFFR^b@G@DFfBXh@Ch@QLHLb@PdDTzA@v@N~@@^DLBf@H`@?VJ~AHXL`CJf@\\|DNnCDXd@vAHp@Cd@b@vEB?AJNTfAh@Nh@xA|Ad@PZZbAl@l@Ij@WlA}@RB`@r@BAAN^VJh@CFJ~@z@jC^t@X`AFF?NJFDd@NJDXVh@`@PdB[TD^EJF@GHDRE@IF@GAEB@FHBRQN@ZYlACAED?rB?ZQzAOj@[`@g@r@g@RYFUG_AMw@AaA`@}EFwBE_CL}AB}@NsAJc@Bi@H[R[hAo@Ji@[}EWcBCkAOyAAm@HIjB?^GNSLA\\s@lAcD@{@{@kHOkB@WJs@`@uAX_BEqA@ShB_@`Ae@bAs@d@OpEWVKlAIRGHMt@Jh@It@B|AIRH|@?PGVBRKt@KvCQ`@UzBk@p@a@bA]TAZ]f@KDS]uC",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      47.061058,
+      7.504168
+    ],
+    "end_latlng": [
+      47.061292,
+      7.504266
+    ],
+    "average_speed": 1.48,
+    "max_speed": 6.2,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 602.3,
+    "elev_low": 535.9,
+    "upload_id": 18759964691,
+    "upload_id_str": "18759964691",
+    "external_id": "stripped_1758C2EC-AB78-4199-9DEC-984462084915-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 206214357,
+      "resource_state": 1
+    },
+    "name": "Ausritt alleine",
     "distance": 7198.0,
     "moving_time": 4534,
     "elapsed_time": 4833,
@@ -502,4 +565,4 @@
     "total_photo_count": 0,
     "has_kudoed": false
   }
-], "updated_at": "2026-03-09T06:57:59Z"}
+], "updated_at": "2026-03-10T06:43:18Z"}
