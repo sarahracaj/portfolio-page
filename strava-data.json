@@ -6,6 +6,69 @@
       "resource_state": 1
     },
     "name": "Ausritt alleine",
+    "distance": 0.0,
+    "moving_time": 4517,
+    "elapsed_time": 4517,
+    "total_elevation_gain": 0.0,
+    "type": "Ride",
+    "sport_type": "Ride",
+    "workout_type": null,
+    "device_name": "Strava App",
+    "id": 17709130345,
+    "start_date": "2026-03-13T14:27:05Z",
+    "start_date_local": "2026-03-13T15:27:05Z",
+    "timezone": "(GMT+01:00) Europe/Zurich",
+    "utc_offset": 3600.0,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a17709130345",
+      "summary_polyline": "}sf~Gmwxl@??",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      47.061275,
+      7.50471
+    ],
+    "end_latlng": [
+      47.061275,
+      7.50471
+    ],
+    "average_speed": 0.0,
+    "max_speed": 0.0,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 535.9,
+    "elev_low": 535.9,
+    "upload_id": 18807676735,
+    "upload_id_str": "18807676735",
+    "external_id": "stripped_00AAB8EA-851D-4020-9190-84CEEB13DB54-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 206214357,
+      "resource_state": 1
+    },
+    "name": "Ausritt alleine",
     "distance": 9812.9,
     "moving_time": 6629,
     "elapsed_time": 6749,
@@ -565,4 +628,4 @@
     "total_photo_count": 0,
     "has_kudoed": false
   }
-], "updated_at": "2026-03-13T06:48:24Z"}
+], "updated_at": "2026-03-14T06:41:30Z"}
