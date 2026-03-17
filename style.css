@@ -22,8 +22,8 @@
 
 @font-face {
   font-family: "Brother Signature";
-  src: url("fonts/BrotherSignature-7BWnK.otf") format("truetype");
-  font-weight: 100;
+  src: url("fonts/BrotherSignature-7BWnK.otf") format("opentype");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -180,7 +180,7 @@ header {
 }
 
 .quote-text .script {
-  font-family: "Brother Signature", normal;
+  font-family: "Brother Signature", cursive;
   font-size: 80px;
   letter-spacing: 1px;
 }
