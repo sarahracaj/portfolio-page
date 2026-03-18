@@ -61,7 +61,7 @@ header {
 
 .about-intro {
   background: var(--bg-brown);
-  padding: 90px 0 70px;
+  padding: 70px 0 70px;
   overflow: hidden;
 }
 
@@ -183,4 +183,138 @@ header {
   font-family: "Brother Signature", cursive;
   font-size: 80px;
   letter-spacing: 1px;
+}
+.know-section {
+  background: rgb(243, 239, 230);
+  padding: 80px;
+}
+
+.know-grid {
+  display: grid;
+  grid-template-columns: 220px minmax(320px, 1fr) 220px;
+  gap: 80px;
+  align-items: start;
+}
+
+.know-side {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.know-main {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.know-title {
+  margin: 0 0 36px;
+  color: rgb(68, 19, 45, 0.823);
+  line-height: 0.95;
+}
+
+.know-title-top {
+  display: block;
+  font-family: "Vintage Glamour", serif;
+  font-size: clamp(3rem, 5vw, 5.3rem);
+}
+
+.know-title-script {
+  display: block;
+  font-family: "Brother Signature", cursive;
+  font-size: clamp(3rem, 5vw, 5.1rem);
+  margin-top: -8px;
+}
+
+.know-main-text {
+  max-width: 520px;
+  margin: 0 auto;
+  font-family: "Idealist Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.9;
+  color: rgba(68, 19, 45, 0.823);
+  text-transform: none;
+  letter-spacing: 0.2px;
+}
+
+.know-mini-block {
+  text-align: left;
+}
+
+.know-mini-title {
+  margin: 0 0 12px;
+  font-family: "Vintage Glamour", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: rgb(68, 19, 45, 0.823);
+}
+
+.know-mini-text {
+  margin: 0;
+  font-family: "Idealist Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(68, 19, 45, 0.823);
+  text-transform: none;
+  letter-spacing: 0.1px;
+}
+
+.know-side-image img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  object-fit: cover;
+}
+
+.know-side-image-top img {
+  aspect-ratio: 4 / 3;
+}
+
+.know-side-left .know-side-image img {
+  aspect-ratio: 4 / 3;
+}
+
+.quote-block {
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .know-section {
+    padding: 80px 0;
+  }
+
+  .know-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .know-side {
+    gap: 28px;
+  }
+
+  .know-main {
+    order: 1;
+  }
+
+  .know-side-left {
+    order: 2;
+  }
+
+  .know-side-right {
+    order: 3;
+  }
+
+  .know-mini-block,
+  .quote-block {
+    text-align: center;
+  }
+
+  .know-side-image img {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
