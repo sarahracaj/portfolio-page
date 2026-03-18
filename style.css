@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "Vintage Glamour";
-  src: url("fonts/VintageGlamourItalic-D0471.ttf") format("truetype");
+  src: url("fonts/VintageGlamourItalic-DO471.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
@@ -316,5 +316,128 @@ header {
   .know-side-image img {
     max-width: 320px;
     margin: 0 auto;
+  }
+}
+
+.fun-section {
+  background: rgb(243, 239, 230);
+  padding: 0;
+}
+
+.fun-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 520px;
+}
+
+.fun-left {
+  background: rgba(68, 19, 45, 0.823);
+  display: flex;
+  align-items: center;
+}
+
+.fun-left-inner {
+  width: 100%;
+  max-width: 620px;
+  padding: 70px 70px 70px 85px;
+}
+
+.fun-title {
+  margin: 0 0 50px;
+  font-family: "Brother Signature", cursive;
+  font-size: clamp(3.2rem, 5vw, 5.3rem);
+  font-weight: 400;
+  line-height: 1;
+  color: rgb(243, 239, 230);
+}
+
+.fun-facts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px 42px;
+}
+
+.fun-fact {
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(243, 239, 230, 0.35);
+}
+
+.fun-label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Idealist Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  color: rgba(243, 239, 230, 0.7);
+}
+
+.fun-value {
+  margin: 0;
+  font-family: "Vintage Glamour", serif;
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  line-height: 1.1;
+  color: rgb(243, 239, 230);
+}
+
+.fun-right {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.fun-bg-image {
+  position: absolute;
+  inset: 0;
+}
+
+.fun-bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.05) brightness(0.78);
+}
+
+.fun-portrait {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: min(64%, 420px);
+  z-index: 2;
+}
+
+.fun-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+@media (max-width: 980px) {
+  .fun-section {
+    padding: 0 20px 40px;
+  }
+
+  .fun-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fun-left-inner {
+    padding: 50px 28px;
+  }
+
+  .fun-facts-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .fun-right {
+    min-height: 420px;
+  }
+
+  .fun-portrait {
+    width: min(70%, 320px);
+    left: 50%;
   }
 }
