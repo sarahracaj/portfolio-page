@@ -5,6 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="places.js" defer></script>
   </head>
   <body>
     <header>
@@ -169,5 +177,22 @@
     </section>
 
     <script src="spotify.js"></script>
+
+    <section class="places-section">
+      <div class="container places-container">
+        <h2 class="places-title">
+          <span class="places-title-top">Places I</span>
+          <span class="places-title-script">Love</span>
+        </h2>
+
+        <div class="places-grid">
+          <div id="places-cards" class="places-cards"></div>
+
+          <div class="places-map-wrap">
+            <div id="places-map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
