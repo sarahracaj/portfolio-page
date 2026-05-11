@@ -71,7 +71,7 @@ header {
 
 .about-intro h1 {
   font-family: "Bemirs", serif;
-  font-size: 68px;
+  font-size: clamp(2.5rem, 8vw, 4.25rem);
   line-height: 1;
   color: rgb(243, 239, 230);
   margin: 0 0 22px;
@@ -139,7 +139,7 @@ header {
 
 .quote-section {
   position: relative;
-  height: 300px;
+  min-height: 300px;
   overflow: hidden;
 }
 
@@ -170,19 +170,19 @@ header {
 .quote-text {
   max-width: 700px;
   font-family: "Vintage Glamour", serif;
-  font-size: 40px;
+  font-size: clamp(1.4rem, 3.5vw, 2.5rem);
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.95);
 }
 .quote-text span {
   font-family: "Brother Signature", cursive;
-  font-size: 80px;
+  font-size: clamp(2.5rem, 7vw, 5rem);
   letter-spacing: 1px;
 }
 
 .quote-text .script {
   font-family: "Brother Signature", cursive;
-  font-size: 80px;
+  font-size: clamp(2.5rem, 7vw, 5rem);
   letter-spacing: 1px;
 }
 .know-section {
@@ -283,43 +283,6 @@ header {
   text-align: center;
 }
 
-@media (max-width: 980px) {
-  .know-section {
-    padding: 80px 0;
-  }
-
-  .know-grid {
-    grid-template-columns: 1fr;
-    gap: 42px;
-  }
-
-  .know-side {
-    gap: 28px;
-  }
-
-  .know-main {
-    order: 1;
-  }
-
-  .know-side-left {
-    order: 2;
-  }
-
-  .know-side-right {
-    order: 3;
-  }
-
-  .know-mini-block,
-  .quote-block {
-    text-align: center;
-  }
-
-  .know-side-image img {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-}
-
 .fun-section {
   background: rgb(243, 239, 230);
   padding: 0;
@@ -415,33 +378,7 @@ header {
   display: block;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
 }
-@media (max-width: 980px) {
-  .fun-section {
-    padding: 0 20px 40px;
-  }
 
-  .fun-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .fun-left-inner {
-    padding: 50px 28px;
-  }
-
-  .fun-facts-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .fun-right {
-    min-height: 420px;
-  }
-
-  .fun-portrait {
-    width: min(70%, 320px);
-    left: 50%;
-  }
-}
 .spotify-section {
   background: rgb(243, 239, 230);
   padding: 50px;
@@ -541,36 +478,6 @@ header {
   color: rgba(68, 19, 45, 0.823);
 }
 
-@media (max-width: 768px) {
-  .spotify-section {
-    padding: 80px 0;
-  }
-
-  .spotify-track {
-    grid-template-columns: 56px 1fr;
-    gap: 14px;
-    padding: 14px 16px;
-  }
-
-  .spotify-track::after {
-    display: none;
-  }
-
-  .spotify-track img {
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-  }
-
-  .spotify-title-top {
-    font-size: clamp(2.4rem, 9vw, 3.2rem);
-  }
-
-  .spotify-title-script {
-    font-size: clamp(2.4rem, 9vw, 3.1rem);
-  }
-}
-
 .places-section {
   background: rgb(243, 239, 230);
   padding: 110px 0;
@@ -651,26 +558,8 @@ header {
   padding: 12px;
 }
 
-#places-map {
-  width: 100%;
-  height: 100%;
-  min-height: 600px;
-  border-radius: 12px;
-}
-
-@media (max-width: 980px) {
-  .places-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #places-map {
-    min-height: 350px;
-  }
-}
-
 .places-map-wrap {
   background: rgba(255, 255, 255, 0.55);
-  border-radius: 24px;
   padding: 14px;
   border: 1px solid rgba(68, 19, 45, 0.08);
   box-shadow: 0 10px 30px rgba(68, 19, 45, 0.05);
@@ -680,7 +569,6 @@ header {
   width: 100%;
   height: 100%;
   min-height: 600px;
-  border-radius: 18px;
   overflow: hidden;
 }
 
@@ -708,4 +596,206 @@ header {
 .custom-popup span {
   font-size: 13px;
   color: rgba(68, 19, 45, 0.7);
+}
+
+/*TABLET */
+@media (max-width: 980px) {
+  /* Header */
+  header {
+    padding: 10px 20px;
+  }
+
+  /* About Intro */
+  .about-intro {
+    padding: 50px 24px;
+  }
+
+  /* Meet Section */
+  .meet-section {
+    padding: 70px 24px;
+  }
+
+  .meet-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .meet-image img {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  /* Quote Section */
+  .quote-overlay {
+    padding: 40px 24px;
+  }
+
+  /* Know Section */
+  .know-section {
+    padding: 80px 0;
+  }
+
+  .know-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .know-side {
+    gap: 28px;
+  }
+
+  .know-main {
+    order: 1;
+  }
+
+  .know-side-left {
+    order: 2;
+  }
+
+  .know-side-right {
+    order: 3;
+  }
+
+  .know-mini-block,
+  .quote-block {
+    text-align: center;
+  }
+
+  .know-side-image img {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Fun Section */
+  .fun-section {
+    padding: 0 20px 40px;
+  }
+
+  .fun-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fun-left-inner {
+    padding: 50px 28px;
+  }
+
+  .fun-facts-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .fun-right {
+    min-height: 420px;
+  }
+
+  .fun-portrait {
+    width: min(70%, 320px);
+    left: 50%;
+  }
+
+  /* Spotify */
+  .spotify-section {
+    padding: 70px 24px;
+  }
+
+  /* Places */
+  .places-section {
+    padding: 70px 24px;
+  }
+
+  .places-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #places-map {
+    min-height: 350px;
+  }
+}
+
+/*MOBILE*/
+@media (max-width: 767px) {
+  /* Header */
+  header {
+    padding: 10px 16px;
+    font-size: 9px;
+  }
+
+  /* About Intro */
+  .about-intro {
+    padding: 44px 20px;
+  }
+
+  .about-intro-text {
+    font-size: 14px;
+  }
+
+  /* Meet Section */
+  .meet-section {
+    padding: 56px 20px;
+  }
+
+  .meet-grid {
+    gap: 28px;
+  }
+
+  .meet-image img {
+    max-width: 280px;
+  }
+
+  .meet-content {
+    max-width: 100%;
+  }
+
+  .meet-text {
+    font-size: 14px;
+  }
+
+  /* Quote Section */
+  .quote-overlay {
+    padding: 44px 20px;
+  }
+
+  /* Know Section */
+  .know-section {
+    padding: 56px 20px;
+  }
+
+  /* Fun Section */
+  .fun-left-inner {
+    padding: 44px 20px;
+  }
+
+  /* Spotify */
+  .spotify-section {
+    padding: 56px 20px;
+  }
+
+  .spotify-track {
+    grid-template-columns: 56px 1fr;
+    gap: 14px;
+    padding: 14px 16px;
+  }
+
+  .spotify-track::after {
+    display: none;
+  }
+
+  .spotify-track img {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+  }
+
+  /* Places */
+  .places-section {
+    padding: 56px 20px;
+  }
+
+  .places-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #places-map {
+    min-height: 320px;
+  }
 }
