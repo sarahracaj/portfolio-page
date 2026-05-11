@@ -120,6 +120,21 @@ function initMap(data) {
         </div>
       `);
 
+    marker.bindPopup(`
+  <div class="custom-popup">
+    <strong>${place.name}</strong><br>
+    <span>${place.country}</span>
+  </div>
+`);
+
+    marker.on("mouseover", function () {
+      this.openPopup();
+    });
+
+    marker.on("mouseout", function () {
+      this.closePopup();
+    });
+
     bounds.push([place.lat, place.lng]);
   });
 
