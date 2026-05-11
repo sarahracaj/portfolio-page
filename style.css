@@ -502,9 +502,8 @@ header {
 
 .places-title-script {
   display: block;
-  font-family: "Vintage Glamour", serif;
-  font-style: italic;
-  font-size: clamp(3rem, 5vw, 5.2rem);
+  font-family: "Brother Signature", cursive;
+  font-size: clamp(4rem, 7vw, 5.5rem);
   margin-top: -8px;
 }
 
