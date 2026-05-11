@@ -479,7 +479,7 @@ header {
 }
 
 .places-section {
-  background: rgb(243, 239, 230);
+  background: rgb(68, 19, 45, 0.823);
   padding: 110px 0;
 }
 
@@ -492,19 +492,19 @@ header {
   margin: 0 0 42px;
   text-align: center;
   line-height: 0.95;
-  color: rgba(68, 19, 45, 0.9);
+  color: rgb(243, 239, 230);
 }
-
 .places-title-top {
   display: block;
   font-family: "Vintage Glamour", serif;
-  font-size: clamp(2.8rem, 4vw, 4.2rem);
+  font-size: clamp(3rem, 5vw, 5.2rem);
 }
 
 .places-title-script {
   display: block;
-  font-family: "Brother Signature", cursive;
-  font-size: clamp(2.8rem, 4vw, 4rem);
+  font-family: "Vintage Glamour", serif;
+  font-style: italic;
+  font-size: clamp(3rem, 5vw, 5.2rem);
   margin-top: -8px;
 }
 
@@ -522,7 +522,7 @@ header {
 .place-card {
   padding: 20px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(243, 239, 230);
   border: 1px solid rgba(68, 19, 45, 0.08);
 }
 
@@ -530,7 +530,7 @@ header {
   margin: 0 0 6px;
   font-family: "Vintage Glamour", serif;
   font-size: 1.9rem;
-  color: rgba(68, 19, 45, 0.95);
+  color: rgba(68, 19, 45, 0.823);
 }
 
 .place-country {
@@ -553,13 +553,13 @@ header {
 }
 
 .places-map-wrap {
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(243, 239, 230);
   border-radius: 20px;
   padding: 12px;
 }
 
 .places-map-wrap {
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(243, 239, 230);
   padding: 14px;
   border: 1px solid rgba(68, 19, 45, 0.08);
   box-shadow: 0 10px 30px rgba(68, 19, 45, 0.05);
