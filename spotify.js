@@ -4,6 +4,54 @@ const SCOPES = "user-top-read";
 
 const tracksContainer = document.getElementById("spotify-tracks");
 
+const FALLBACK_TRACKS = [
+  {
+    name: "All Night",
+    artist: "Beyoncé",
+    image: "https://i.scdn.co/image/ab67616d0000b2738db37bc9a58543471bee78c5",
+    url: "https://open.spotify.com/track/7oAuqs6akGnPU3Tb00ZmyM",
+  },
+  {
+    name: "Black Mascara.",
+    artist: "RAYE",
+    image: "https://i.scdn.co/image/ab67616d0000b27394e5237ce925531dbb38e75f",
+    url: "https://open.spotify.com/track/3yM4sIOrG4UOJve2fQU7Zc",
+  },
+  {
+    name: "Rruga jeme",
+    artist: "Tayna, Elai",
+    image: "https://i.scdn.co/image/ab67616d0000b273d536c8cba7f442a9cb6251c6",
+    url: "https://open.spotify.com/track/5in6QAqbZBrr1FoSkufd67",
+  },
+  {
+    name: "CUFF IT",
+    artist: "Beyoncé",
+    image: "https://i.scdn.co/image/ab67616d0000b27369a3c061676c2020adfe8315",
+    url: "https://open.spotify.com/track/1xzi1Jcr7mEi9K2RfzLOqS",
+  },
+  {
+    name: "II HANDS II HEAVEN",
+    artist: "Beyoncé",
+    image: "https://i.scdn.co/image/ab67616d0000b273208e593c3565dae1295b5a26",
+    url: "https://open.spotify.com/track/1Y7vNzQrybb2ICYKmbOfdt",
+  },
+];
+
+function renderFallbackTracks() {
+  if (!tracksContainer) return;
+  tracksContainer.innerHTML = FALLBACK_TRACKS.map(
+    (t) => `
+    <a class="spotify-track" href="${t.url}" target="_blank" rel="noopener noreferrer">
+      <img src="${t.image}" alt="${t.name}">
+      <div class="spotify-info">
+        <p class="track-name">${t.name}</p>
+        <p class="artist-name">${t.artist}</p>
+      </div>
+    </a>
+  `
+  ).join("");
+}
+
 function base64UrlEncode(arrayBuffer) {
   return btoa(String.fromCharCode(...new Uint8Array(arrayBuffer)))
     .replace(/\+/g, "-")
@@ -75,9 +123,7 @@ async function exchangeCodeForToken(code) {
 
   const res = await fetch("https://accounts.spotify.com/api/token", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body,
   });
 
@@ -112,9 +158,7 @@ async function refreshAccessToken() {
 
   const res = await fetch("https://accounts.spotify.com/api/token", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body,
   });
 
@@ -159,27 +203,11 @@ async function spotifyFetch(url, options = {}, attempt = 0) {
     const retryAfter = Number(res.headers.get("Retry-After") || "1");
     const waitMs =
       retryAfter > 0 ? retryAfter * 1000 : 1000 * Math.pow(2, attempt);
-
     await new Promise((resolve) => setTimeout(resolve, waitMs));
     return spotifyFetch(url, options, attempt + 1);
   }
 
   return res;
-}
-
-function renderLoginButton() {
-  if (!tracksContainer) return;
-
-  tracksContainer.innerHTML = `
-    <div class="spotify-login-box">
-      <p class="spotify-login-text">Verbinde Spotify, um deine Top Tracks anzuzeigen.</p>
-      <button class="spotify-login-button" id="spotify-connect-btn">Connect Spotify</button>
-    </div>
-  `;
-
-  document
-    .getElementById("spotify-connect-btn")
-    ?.addEventListener("click", redirectToSpotifyLogin);
 }
 
 function renderTracks(items) {
@@ -188,7 +216,7 @@ function renderTracks(items) {
   tracksContainer.innerHTML = items
     .map((track) => {
       const title = track.name;
-      const artists = track.artists.map((artist) => artist.name).join(", ");
+      const artists = track.artists.map((a) => a.name).join(", ");
       const image = track.album?.images?.[0]?.url || "";
       const link = track.external_urls?.spotify || "#";
       const album = track.album?.name || "";
@@ -219,11 +247,7 @@ async function loadTopTracks() {
 
     const res = await spotifyFetch(
       "https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=medium_term",
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      }
+      { headers: { Authorization: `Bearer ${token}` } }
     );
 
     const data = await res.json();
@@ -237,7 +261,7 @@ async function loadTopTracks() {
     renderTracks(data.items || []);
   } catch (error) {
     console.error(error);
-    renderLoginButton();
+    renderFallbackTracks();
   }
 }
 
