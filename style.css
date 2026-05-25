@@ -27,10 +27,6 @@
   font-style: normal;
 }
 
-:root {
-  --bg-brown: rgb(68, 19, 45, 0.823);
-}
-
 body {
   margin: 0;
   font-family: "Idealist Sans", sans-serif;
@@ -60,7 +56,7 @@ header {
 }
 
 .about-intro {
-  background: var(--bg-brown);
+  background: rgb(68, 19, 45, 0.823);
   padding: 70px 0 70px;
   overflow: hidden;
 }
@@ -599,19 +595,16 @@ header {
   color: rgba(68, 19, 45, 0.7);
 }
 
-/*TABLET */
+/*Tablet */
 @media (max-width: 980px) {
-  /* Header */
   header {
     padding: 10px 20px;
   }
 
-  /* About Intro */
   .about-intro {
     padding: 50px 24px;
   }
 
-  /* Meet Section */
   .meet-section {
     padding: 70px 24px;
   }
@@ -626,12 +619,10 @@ header {
     margin: 0 auto;
   }
 
-  /* Quote Section */
   .quote-overlay {
     padding: 40px 24px;
   }
 
-  /* Know Section */
   .know-section {
     padding: 80px 0;
   }
@@ -667,7 +658,6 @@ header {
     margin: 0 auto;
   }
 
-  /* Fun Section */
   .fun-section {
     padding: 0 20px 40px;
   }
@@ -694,12 +684,10 @@ header {
     left: 50%;
   }
 
-  /* Spotify */
   .spotify-section {
     padding: 70px 24px;
   }
 
-  /* Places */
   .places-section {
     padding: 70px 24px;
   }
@@ -713,15 +701,13 @@ header {
   }
 }
 
-/*MOBILE*/
+/*Mobile*/
 @media (max-width: 767px) {
-  /* Header */
   header {
     padding: 10px 16px;
     font-size: 9px;
   }
 
-  /* About Intro */
   .about-intro {
     padding: 44px 20px;
   }
@@ -730,7 +716,6 @@ header {
     font-size: 14px;
   }
 
-  /* Meet Section */
   .meet-section {
     padding: 56px 20px;
   }
@@ -751,22 +736,18 @@ header {
     font-size: 14px;
   }
 
-  /* Quote Section */
   .quote-overlay {
     padding: 44px 20px;
   }
 
-  /* Know Section */
   .know-section {
     padding: 56px 20px;
   }
 
-  /* Fun Section */
   .fun-left-inner {
     padding: 44px 20px;
   }
 
-  /* Spotify */
   .spotify-section {
     padding: 56px 20px;
   }
@@ -787,7 +768,6 @@ header {
     border-radius: 12px;
   }
 
-  /* Places */
   .places-section {
     padding: 56px 20px;
   }
