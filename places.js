@@ -135,6 +135,9 @@ function initMap(data) {
 }
 
 async function init() {
+  document.getElementById(
+    "places-cards"
+  ).innerHTML = `<p style="color: rgb(243,239,230); opacity: 0.6;">Loading...</p>`;
   const results = await Promise.all(
     places.map(async (place) => {
       const weather = await getWeather(place);
